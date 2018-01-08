@@ -1,1 +1,1 @@
-"# form-validation" 
+Simple form validation using jQuery.
