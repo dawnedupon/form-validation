@@ -1,0 +1,101 @@
+body {
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	padding: 48px 64px;
+	display: flex;
+	background: #EEE;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.form-wrapper {
+	width: 600px;
+	height: auto;
+	margin: 24px auto auto auto;
+	padding: 24px 48px 16px 48px;
+	border: 1px solid #CCC;
+	border-radius: 6px;
+	background: #FAFAFA;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.form-elem {
+	width: 100%;
+	margin: 10px 0;
+	display: flex;
+}
+
+label {	
+	width: 180px;
+	color: #616161;
+	line-height: 40px;
+}
+
+input {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 0 12px;
+	border-radius: 4px;
+}
+
+input[type="text"],
+input[type="password"] {
+	flex: 1;
+	color: #424242;
+	border: 1px solid #CCC;
+}
+
+input[type="submit"] {
+	width: 200px;
+	margin: 16px 0;
+	color: #FFF;
+	background: mediumseagreen;
+	align-self: flex-end;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: darkseagreen;
+}
+
+input[type="submit"]:active {
+	background: seagreen;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+
+#errorMessage,
+#successMessage {
+	display: none;
+	width: 100%;
+	height: auto;
+	padding: 6px 16px;
+	margin-bottom: 16px;
+	background: tomato;
+	border-radius: 4px;
+}
+
+#errorMessage {
+	background: tomato;
+}
+
+#successMessage {
+	background: mediumseagreen;
+}
+
+#errorMessage p,
+#successMessage p {
+	color: #FFF;
+	font-size: 14px;
+	margin: 4px 0;
+}
